@@ -13,14 +13,14 @@ exit或remove函数中：
 
 上报事件
 
-两种事件上报方式：
-1. 对有中断支持的输入设备：在其中断处理函数（上半部或下半部）中上报事件
-2. 对无中断支持的输入设备：使用workqueue循环定时上报(struct delayed_work)
+    两种事件上报方式：
+    1. 对有中断支持的输入设备：在其中断处理函数（上半部或下半部）中上报事件
+    2. 对无中断支持的输入设备：使用workqueue循环定时上报(struct delayed_work)
 
-主要函数：
-1. input_event
-2. input_report_abs
-3. input_sync
+    主要函数：
+    1. input_event
+    2. input_report_abs
+    3. input_sync
 
 
 ### 相关接口：
