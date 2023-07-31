@@ -12,6 +12,7 @@ exit或remove函数中：
 2. 销毁struct input_dev对象input_free_device
 
 上报事件
+
 两种事件上报方式：
 1. 对有中断支持的输入设备：在其中断处理函数（上半部或下半部）中上报事件
 2. 对无中断支持的输入设备：使用workqueue循环定时上报(struct delayed_work)
